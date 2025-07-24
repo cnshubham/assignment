@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url(purple-waves-wallpaper-preview.jpg) no-repeat center / cover;
+    padding: 50px 5%;
+}
+ #container{
+    position: relative;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    animation: zoom-in 1s ease forwards;
+}
+@keyframes zoom-in {
+    100%{
+        transform: scale(1);
+    }
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header #logo {
+    font-size: 2em;
+    cursor: default;
+    color: rgb(235, 14, 243);
+}
+
+header #navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+header #navbar a:hover,
+#navbar a.active{
+    border-color: #fff;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+}
+.home-detail h1{
+    font-size: 2.7em;
+    line-height: 1;
+    /* color: #28ee63; */
+}
+.home-detail h2{
+    font-size: 1.8em;
+    /* color: #df567b; */
+}
+.home-detail p{
+    /* width: 70%; */
+    font-size: 1.1em;
+}
+.social-media{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.social-media .btm{
+    display: inline-block;
+     padding: 10px 30px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #fff;
+    text-decoration: none;
+    background: #fff;
+}
+.social-media .btm:hover{
+    color: #fff;
+    box-shadow: none;
+    background: transparent;
+}
+
+.social-media .social-icon{
+    margin-left: 20px;
+}
+
+.social-media .social-icon a{
+    /* display: inline-block;     */
+     display: inline-flex;
+     padding: 8px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: .5s;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.social-media .social-icon a:hover{
+    transform: translateY(-10px);
+    background: #fff;
+    color: #333;
+    box-shadow: 0 0 10px #fff;
+}
+.home-img .img-box{
+  position: relative;
+  width: 28vw;
+  height: 28vh;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  overflow: hidden;
+}
+.home-img .img-box img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    top: 30px;
+}
