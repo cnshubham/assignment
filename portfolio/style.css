@@ -28,20 +28,13 @@ header #navbar a {
     font-size: 1.1em;
     font-weight: 500;
     margin-right: 40px;
-    transition: .3s;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
 }
-
-header #navbar :nth-child(1) {
-    text-decoration: underline;
+header #navbar a:hover,
+#navbar a.active {
     color: #7d2ae8;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #7d2ae8;
-}
-
-header #navbar a:hover {
-    color: #7d2ae8;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    border-color: #7d2ae8;
 }
 
 header #button {
